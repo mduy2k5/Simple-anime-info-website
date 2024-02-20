@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<!-- Header of page -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=devide-width", initail-scale=1.0>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<style >
+		body{
+			margin: 0px;
+			font-family: "Poppins", sans-serif;
+			cursor: default;
+		}
+		
+	</style>
+	<script src="script.js" ></script>
+
+	<link rel="icon" type="image/x-icon" href="./web.ico">
+	<title>MyAnimeList</title>
+</head>
+<!-- Body of page -->
+<body>
+	<!-- First screen -->
+	<div class="start" id="start">
+		<div class="background" id="background"></div>
+		<div class="content-start" id = "content-start">
+			<h2 class="content-start-title" id = "content-start-title">Anime list</h2>
+			<h2 class="content-start-introdute" id="content-start-introdute">Great website for you to find your favourite anime</h2>
+			<button class="start-btn" id = "start-btn" onclick="start()">Join now</button>
+		</div>
+		
+	</div>
+	<!-- Login screen -->
+	<div class="login" id="login">
+		<h2 class="login-title">My Anime</h2>
+		<input type="text" class="user-name" placeholder="Username">
+		<input type="text" class="password" placeholder="Password">
+		<div class="check">
+			<div >
+				<input type="checkbox">
+				<label>Remember me</label>
+			</div>
+			<a href="#">Forgot password?</a>
+		</div>
+		<button class="login-button-tab" onclick="start()">Login</button>
+		<div class="register-link">
+			<label>Don't have an account?</label>
+			<a>Register</a>
+		</div>
+	</div>
+	<!-- Navigation -->
+	<ul class="nav-links" id ='nav-links'>
+		<li><a href="#">Home</a></li>
+		<li class="center"><a href="#">Top</a></li>
+		<li class="upward"><a href="#">Community</a></li>
+		<li class="forward"><a href="#">Feedback</a></li>
+	</ul>
+
+	
+	<!-- Mainscreen -->
+	<!-- Inner form -->
+	<div class="s003" id = "s003">
+		<form>
+		<div class="inner-form">
+		<div class="input-field second-wrap">
+		<input id="search" type="text" placeholder="Enter Keywords?">
+		</div>
+		<div class="input-field third-wrap">
+		<button class="btn-search" type="button">
+		<svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+		<path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+		</svg>
+		</button>
+		</div>
+		</div>
+		</form>
+		</div>
+	<!-- Content path -->
+	<div class="content" id = 'content'>
+		
+	</div>
+	<div class="sec2" id='sec2'>
+	</div>
+	<!-- Load data.json -->
+	<script language="JavaScript" type="text/javascript">
+		console.log(window.innerWidth);
+		// click function
+		// function clicked(){
+		// 	document.getElementById("sec2").style.display='flex';
+		// 	document.getElementById("mainsec").style.display='flex';
+		// 	document.getElementById("mainpng").style.display='flex';
+		// 	window.scrollTo(0, 1000);
+		// }
+		// random background
+		// get a random number
+		function getRndInteger(min, max) {
+    		return Math.floor(Math.random() * (max - min)) + min;
+  		}
+		let rndnum = String(getRndInteger(1,4));
+		// create background
+		const make = "source/anime_style_wallpaper__" + rndnum + ".png" 
+		document.getElementById("background").style.background = "url("+make+")" ;
+		document.getElementById("background").style.backgroundRepeat = "no-repeat";
+		document.getElementById("background").style.backgroundSize = "cover";
+		document.getElementById("background").style.backgroundPosition = "center";
+		
+		// load data
+		fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) => firstrender(json));
+		// first load
+		function firstrender(json) {
+			for (let i = 0;i<Object.keys(json).length;i++) {
+  				let a = json[i];
+				const node = document.createElement('li');
+				node.className = a.class;
+				const image = document.createElement('img');
+				image.src = a.img;
+				node.append(image);
+				const text = document.createElement('h4');
+				text.textContent = a.name;
+				node.appendChild(text);
+				
+				node.onclick = function () { clicked(a.class,a.img,a.name,a.content,a.backcolor,a.textcolor); };
+				document.getElementById("content").appendChild(node);
+			}
+		}
+		// load function
+		function render(json) {
+			for (let i = 0;i<Object.keys(json).length;i++) {
+  				try {
+					let a = json[i];
+					const node = document.createElement('li');
+					node.className = a.class;
+					const image = document.createElement('img');
+					image.src = a.img;
+					
+					node.append(image);
+					const text = document.createElement('h4');
+					text.textContent = a.name;
+					node.appendChild(text);
+					
+					node.onclick = function () { clicked(a.class,a.img,a.name,a.content,a.backcolor,a.textcolor); };
+					document.getElementById("content").appendChild(node);
+				}
+				catch(err){
+					console.log('err');
+				}
+			}
+		}
+		// load when scroll
+		window.onscroll = function(){check()};
+		function check(){
+			var pageHeight=document.documentElement.offsetHeight,
+			windowHeight=window.innerHeight,
+			scrollPosition=window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+			if (pageHeight <= windowHeight+scrollPosition) {
+				console.log('Loading...');
+				fetch('./data.json')
+				.then((response) => response.json())
+				.then((json) => render(json));
+			}
+		}
+	</script>
+</body>
+</html>

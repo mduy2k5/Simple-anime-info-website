@@ -1,0 +1,126 @@
+[{
+    "id" : 1,
+    "name" : "Lycoris Recoil",
+    "class" : "lycorisrecoil",
+    "img" : "./source/LycorisRecoil.jpg",
+    "backcolor": "#01b7ab",
+    "textcolor" : "#f75454",
+    "content" : "“LycoReco” is a café with a traditional Japanese twist located in downtown Tokyo. But the delicious coffee and sugary sweets are not the only orders this café takes! From delivering packages short distances, to pick-ups and drop-offs on the lonely streets at night, to zombies and giant monster extermination…?! Whatever your problem, we're here to help! We will solve any kind of 'trouble' you may have!"
+},
+{
+    "id" : 2,
+    "name" : "Oshi no ko",
+    "class" : "oshinoko",
+    "img" : "./source/oshinoko.jpg",
+    "backcolor": "#7c0595",
+    "textcolor" : "#c43d82",
+    "content" : "When a pregnant young starlet appears in Gorou Amemiya's countryside medical clinic, the doctor takes it upon himself to safely (and secretly) deliver Ai Hoshino's child so she can make a scandal-free return to the stage. But no good deed goes unpunished, and on the eve of her delivery, he finds himself slain at the hands of Ai's deluded stalker — and subsequently reborn as Ai's child, Aquamarine Hoshino!..." 
+},
+{
+    "id" : 3,
+    "name" : "Youkoso jitsuryoku shijou shugi no kyoushitsu e",
+    "class" : "lhdctl",
+    "img" : "./source/lhdctl.jpg",
+    "backcolor": "#9B4444",
+    "textcolor" : "#cd0172",
+    "content" : "Koudo Ikusei Senior High School is a leading school with state-of-the-art facilities. The students there have the freedom to wear any hairstyle and bring any personal effects they desire. Koudo Ikusei is like a utopia, but the truth is that only the most superior students receive favorable treatment."
+},
+{
+    "id" : 4,
+    "name" : "Boku no Kokoro no Yabai Yatsu",
+    "class" : "boku",
+    "img" : "./source/Boku no Kokoro no Yabai Yatsu.webp",
+    "backcolor": "#f9c06a",
+    "textcolor" : "#e04fbc",
+    "content": "Fascinated by murder and all things macabre, Kyoutarou daydreams of acting out his twisted fantasies on his unsuspecting classmates — but an encounter with Anna Yamada, the gorgeous class idol, lights a spark in the darkness of his heart. It's a classic tale of an antisocial boy falling for a popular girl, but neither are who they appear to be at first glance. Will Kyoutarou and Anna defy their expectations of each other — and of themselves?..."
+},
+{
+    "id" : 5,
+    "name" : "Kimi no Na wa",
+    "class" : "kimi",
+    "img" : "./source/Kimi no Na wa.jpg",
+    "backcolor": "#3b4084",
+    "textcolor" : "#50a1ff",
+    "content": "Kimi no Na wa. revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance."
+},
+{
+    "id" : 6,
+    "name" : "Dekiru Neko wa Kyou mo Yuuutsu",
+    "class" : "deku",
+    "img" : "./source/Dekiru Neko wa Kyou mo Yuuutsu.jpeg",
+    "backcolor": "#bbbcb7",
+    "textcolor" : "#414841",
+    "content" : "When Saku took in a stray black cat, she never expected that he would become the equivalent of a housekeeping life partner. But Yukichi, a giant cat who towers over Saku, is not your ordinary feline. He takes great pride in his culinary skills, and a good sale at the supermarket always gets his whiskers twitching. Saku may not have her act together yet, but at least she has Yukichi!..."
+},
+{
+    "id" : 7,
+    "name" : "Koe no Katachi",
+    "class" : "koe",
+    "img" : "./source/Koe no Katachi.jpg",
+    "backcolor": "#edcfcd",
+    "textcolor" : "#2eb7ee",
+    "content": "After transferring into a new school, a deaf girl, Shouko Nishimiya, is bullied by the popular Shouya Ishida. As Shouya continues to bully Shouko, the class turns its back on him. Shouko transfers and Shouya grows up as an outcast. Alone and depressed, the regretful Shouya finds Shouko to make amends...."
+},
+{
+    "id" : 8,
+    "name" : "Tokidoki Bosotto Russiago de Dereru Tonari no Alya-san",
+    "class" : "arya",
+    "img" : "./source/arya.jpg_large",
+    "backcolor": "#f9d2d9",
+    "textcolor" : "#ff7a9a",
+    "content": "Alisa Mikhailovna Kujou is Seiren Private Academy's “solitary princess.” She's a half-Russian beauty with silver hair, at the top of her class, student council accountant, and…completely unapproachable. For some reason, she's also taken on the responsibility of reprimanding the slacker who sits next to her in class..."
+},
+{
+    "id" : 9,
+    "name" : "Kusuriya no Hitorigoto",
+    "class" : "kusuriya",
+    "img" : "./source/Kusuriya no Hitorigoto.jpg",
+    "backcolor": "#af5145",
+    "textcolor" : "#9e3a3a",
+    "content": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!..."
+},
+{
+    "id" : 10,
+    "name" : "Shigatsu wa Kimi no Uso",
+    "class" : "shigatsu",
+    "img" : "./source/Shigatsu wa Kimi no Uso.jpg",
+    "backcolor": "#bbdbe8",
+    "textcolor" : "#f6edc4",
+    "content": "Piano prodigy Arima Kousei dominated the competition and all child musicians knew his name. But after his mother, who was also his instructor, passed away, he had a mental breakdown while performing at a recital. This resulted in him no longer being able to hear the sound of his piano playing. Two years later, Kousei hasn't touched the piano ..."
+},
+{
+    "id" : 11,
+    "name" : "Sousou no Frieren",
+    "class" : "sousou",
+    "img" : "./source/sousou-no-frieren.jpg",
+    "backcolor": "#8aed81",
+    "textcolor" : "#ece5f5",
+    "content": "The adventure is over but life goes on for an elf mage just beginning to learn what living is all about. Elf mage Frieren and her courageous fellow adventurers have defeated the Demon King and brought peace to the land. But Frieren will long outlive the rest of her former party. How will she come to understand what life means to the people around her?..."
+},
+{
+    "id" : 12,
+    "name" : "SPY x FAMILY",
+    "class" : "spy",
+    "img" : "./source/SPYFAMILY.jpg",
+    "backcolor": "#056c71",
+    "textcolor" : "#fab0ad",
+    "content":"At a time when all nations of the world were involved in a fierce war of information happening behind closed doors, Ostania and Westalis had been in a state of cold war against one another for decades. The Westalis Intelligence Services' Eastern-Focused Division (WISE) sends their most talented spy, 'Twilight,' on a top-secret mission to..."
+},
+{
+    "id" : 13,
+    "name" : "Villainess Level 99",
+    "class" : "villainess",
+    "img" : "./source/Villainess_Level_99.jpg",
+    "backcolor": "#66171d",
+    "textcolor" : "#e80882",
+    "content":"This college kid wants nothing more than a quiet life. So when she's reborn as Yumiella, the hidden villainess of an Otome RPG, she's not exactly thrilled. Still yearning for peace, she abandons her evil duties to live a more discreet life. Until her gamer side kicks in and she accidentally reaches level 99! Now, everyone suspects that she's the infamous Demon Lord. What future awaits her?..."
+},
+{
+    "id" : 14,
+    "name" : "Violet Evergarden",
+    "class" : "violet",
+    "img" : "./source/Violet Evergarden.jpg",
+    "backcolor": "#fcc195",
+    "textcolor" : "#56412c",
+    "content":"A certain point in time, in the continent of Telesis. The great war which divided the continent into North and South has ended after four years, and the people are welcoming a new generation. Violet Evergarden, a young girl formerly known as “the weapon”, has left the battlefield to start a new life at CH Postal Service. There, she is deeply moved by the work of “Auto Memories Dolls”, ..."
+}]
