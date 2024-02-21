@@ -25,7 +25,7 @@
 <body>
 	<!-- First screen -->
 	<div class="start" id="start">
-		<div class="background" id="background"></div>
+<!-- 		<div class="background" id="background"></div> -->
 		<div class="content-start" id = "content-start">
 			<h2 class="content-start-title" id = "content-start-title">Anime list</h2>
 			<h2 class="content-start-introdute" id="content-start-introdute">Great website for you to find your favourite anime</h2>
@@ -102,10 +102,10 @@
 		let rndnum = String(getRndInteger(1,4));
 		// create background
 		const make = "source/anime_style_wallpaper__" + rndnum + ".png" 
-		document.getElementById("background").style.background = "url("+make+")" ;
-		document.getElementById("background").style.backgroundRepeat = "no-repeat";
-		document.getElementById("background").style.backgroundSize = "cover";
-		document.getElementById("background").style.backgroundPosition = "center";
+		document.getElementById("start").style.background = "url("+make+")" ;
+		document.getElementById("start").style.backgroundRepeat = "no-repeat";
+		document.getElementById("start").style.backgroundSize = "cover";
+		document.getElementById("start").style.backgroundPosition = "center";
 		
 		// load data
 		fetch('./data.json')
