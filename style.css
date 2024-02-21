@@ -18,23 +18,26 @@ html {
     opacity: 1;
     transition: opacity 1s,margin-top 1s ;
     width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    display: block;
 }
-.start .background{
+/* .start .background{
     display: flex;
     height: 100vh;
     background-color: #fff;
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
-}
+} */
 .start .content-start{
     font-family: "Merriweather",serif;
     display: flex;
     flex-direction: column;
-    margin-top: -500px;
     margin-left: 20%;
     width: 400px;
     color: #fff;
+	transform: translateY(300px);
     
     
 }
@@ -684,7 +687,7 @@ img {
     display: none;
     background-color: #01b7ab;
     background-repeat: no-repeat;
-    height: 950px;
+    height: 900px;
     width: 100%;
     background-size: cover;
     flex-direction: column;
