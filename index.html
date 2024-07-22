@@ -3,7 +3,7 @@
 <!-- Header of page -->
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=devide-width", initail-scale=1.0>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
 <body>
 	<!-- First screen -->
 	<div class="start" id="start">
-<!-- 		<div class="background" id="background"></div> -->
+		<div class="background" id="background"></div>
 		<div class="content-start" id = "content-start">
 			<h2 class="content-start-title" id = "content-start-title">Anime list</h2>
 			<h2 class="content-start-introdute" id="content-start-introdute">Great website for you to find your favourite anime</h2>
@@ -86,7 +86,6 @@
 	</div>
 	<!-- Load data.json -->
 	<script language="JavaScript" type="text/javascript">
-		console.log(window.innerWidth);
 		// click function
 		// function clicked(){
 		// 	document.getElementById("sec2").style.display='flex';
@@ -102,10 +101,10 @@
 		let rndnum = String(getRndInteger(1,4));
 		// create background
 		const make = "source/anime_style_wallpaper__" + rndnum + ".png" 
-		document.getElementById("start").style.background = "url("+make+")" ;
-		document.getElementById("start").style.backgroundRepeat = "no-repeat";
-		document.getElementById("start").style.backgroundSize = "cover";
-		document.getElementById("start").style.backgroundPosition = "center";
+		document.getElementById("background").style.background = "url("+make+")" ;
+		document.getElementById("background").style.backgroundRepeat = "no-repeat";
+		document.getElementById("background").style.backgroundSize = "cover";
+		document.getElementById("background").style.backgroundPosition = "center";
 		
 		// load data
 		fetch('./data.json')
@@ -124,7 +123,7 @@
 				text.textContent = a.name;
 				node.appendChild(text);
 				
-				node.onclick = function () { clicked(a.class,a.img,a.name,a.content,a.backcolor,a.textcolor); };
+				node.onclick = function () { clicked(a.class,a.img,a.name,a.content,a.backcolor,a.textcolor,a.leftmar,a.topmar,a.backimg); };
 				document.getElementById("content").appendChild(node);
 			}
 		}
@@ -143,7 +142,7 @@
 					text.textContent = a.name;
 					node.appendChild(text);
 					
-					node.onclick = function () { clicked(a.class,a.img,a.name,a.content,a.backcolor,a.textcolor); };
+					node.onclick = function () { clicked(a.class,a.img,a.name,a.content,a.backcolor,a.textcolor,a.leftmar,a.topmar,a.backimg); };
 					document.getElementById("content").appendChild(node);
 				}
 				catch(err){
